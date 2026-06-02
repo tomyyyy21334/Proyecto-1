@@ -1,6 +1,6 @@
 # Simple Log API Project
 
-Este proyecto implementa una API REST simple para gestionar logs, desarrollada en Python utilizando FastAPI. Incluye tests, un Dockerfile para contenerización y un workflow de CI/CD con GitHub Actions.
+Este proyecto implementa una API REST simple para gestionar logs, desarrollada en Python utilizando FastAPI. Incluye tests, un Dockerfile y un workflow de CI/CD con GitHub Actions.
 
 ## Estructura del Proyecto
 
