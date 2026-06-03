@@ -132,32 +132,3 @@ El workflow consta de dos jobs:
 
 *   Al hacer `push` o `pull_request` a `main`, los tests se ejecutarán automáticamente.
 *   Si los tests pasan (y es un `push` a `main`), la imagen Docker se construirá.
-
-## Cómo subir el proyecto a GitHub
-
-Sigue estos pasos para subir tu proyecto a un nuevo repositorio en GitHub:
-
-1.  **Inicializar un repositorio Git local:**
-
-    ```bash
-    cd log-api-project
-    git init
-    git add .
-    git commit -m "Initial commit: Simple Log API project"
-    ```
-
-2.  **Crear un nuevo repositorio en GitHub:**
-    *   Ve a [GitHub](https://github.com/).
-    *   Haz clic en el botón "New" para crear un nuevo repositorio.
-    *   Dale un nombre (ej. `simple-log-api`), una descripción y elige si será público o privado. **No inicialices el repositorio con un README, .gitignore o licencia.**
-
-3.  **Conectar tu repositorio local con el de GitHub:**
-
-    ```bash
-    git remote add origin <URL_DEL_REPOSITORIO_DE_GITHUB>
-    git branch -M main
-    git push -u origin main
-    ```
-    Reemplaza `<URL_DEL_REPOSITORIO_DE_GITHUB>` con la URL HTTPS de tu nuevo repositorio en GitHub (ej. `https://github.com/tu_usuario/simple-log-api.git`).
-
-¡Tu proyecto estará ahora en GitHub y el pipeline de CI/CD se activará automáticamente con cada cambio en la rama `main`!
