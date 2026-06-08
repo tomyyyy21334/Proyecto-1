@@ -21,7 +21,7 @@ log-api-project/
 
 ## Requisitos
 
-Para ejecutar este proyecto localmente, necesitarás:
+Para ejecutar este proyecto localmente vas a necesitar:
 
 *   Python 3.11+
 *   pip (administrador de paquetes de Python)
@@ -57,7 +57,7 @@ Para iniciar la API localmente:
 uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
-La API estará disponible en `http://0.0.0.0:8000`. Puedes acceder a la documentación interactiva de Swagger UI en `http://0.0.0.0:8000/docs`.
+La API va a estar disponible en `http://0.0.0.0:8000`. Podes acceder a la documentación interactiva de Swagger UI en `http://0.0.0.0:8000/docs`.
 
 ## Endpoints de la API
 
@@ -117,7 +117,7 @@ docker build -t log-api:latest .
 docker run -p 8000:8000 log-api:latest
 ```
 
-La API estará disponible en `http://localhost:8000`.
+La API va a estar disponible en `http://localhost:8000`.
 
 ## Integración Continua / Despliegue Continuo (CI/CD) con GitHub Actions
 
@@ -130,5 +130,5 @@ El workflow consta de dos jobs:
 
 ### Cómo funciona el pipeline:
 
-*   Al hacer `push` o `pull_request` a `main`, los tests se ejecutarán automáticamente.
-*   Si los tests pasan (y es un `push` a `main`), la imagen Docker se construirá.
+*   Al hacer `push` o `pull_request` a `main`, los tests se ejecutan automáticamente.
+*   Si los tests pasan (y es un `push` a `main`), se construye la imagen Docker.
